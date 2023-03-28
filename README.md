@@ -1,3 +1,3 @@
-# FIRST Energize Match Data
+# FIRST Energize Match Data Grabber
 Grabs data from The Blue Alliance and stores it in a csv file for data validation.
 Compatible with spreadsheets, most useful for validating team scouting data or using as scouting data.
