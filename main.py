@@ -80,16 +80,5 @@ def main():
 
     print("Data written")
 
-    # code used to validate the match object's attributes
-    """
-    for match in data:
-        print(match.match_num)
-        for colour in ['blue', 'red']:       
-            alliance = match.alliances[colour]
-            print(alliance.tele_game_pieces)
-            for team in alliance.teams:
-                print(team.robot_endgame_charge_station)
-    """
-
 if __name__ == "__main__":
     main()
