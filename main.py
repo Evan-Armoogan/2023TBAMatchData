@@ -46,6 +46,7 @@ def get_match_data(event_key, match_key):
     #TODO: hide api_key in a .secret file
     f = open("api_key.secret", "r")
     api_key = f.read()
+    f.close
 
     base_url = "https://www.thebluealliance.com/api/v3"
     url = f"{base_url}/match/{key}?X-TBA-Auth-Key={api_key}"
@@ -62,6 +63,7 @@ def write_file(data):
             for team in alliance.teams:
                 line = f"{match.match_num},{alliance.alliance_colour},{team.team_number},{team.robot_mobility},{team.robot_auto_charge_station},{team.robot_endgame_charge_station},{alliance.auto_game_pieces},{alliance.tele_game_pieces}\n"
                 file.write(line)
+    file.close
 
 
 def main():
