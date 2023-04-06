@@ -7,10 +7,10 @@ def main():
     teams = []
     f = open(teams_file, "r")
     while True:
-        line = f.readline()
+        line = f.readline()[:-1]
         if line == "":
             break
-        teams.append(int(line[:-1]))
+        teams.append(int(line))
     
     epa_data.get_epa_data(teams, year)
 
