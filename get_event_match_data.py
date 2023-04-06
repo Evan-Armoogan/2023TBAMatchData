@@ -43,7 +43,6 @@ def parse_data(data_dict):
 def get_match_data(event_key, match_key):
     key = f"{event_key}_{match_key}"
 
-    #TODO: hide api_key in a .secret file
     f = open("api_key.secret", "r")
     api_key = f.read()
     f.close
